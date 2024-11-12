@@ -6,8 +6,8 @@ import hmacSHA512 from 'crypto-js/hmac-sha512';
 // API Configuration
 const API_CONFIG = {
   BASE_URL: 'https://api.am-pay.su/v2',
-  API_PUBLIC: 'your_public_key',  // Ваш публичный ключ
-  API_PRIVATE: 'your_private_key', // Ваш приватный ключ
+  API_PUBLIC: '37289c39ae56d862412aaa3d134c8bbb2ea84341a7ec9b6870bf7bf8568b7b80',  // Ваш публичный ключ
+  API_PRIVATE: '6553a51f076407ed234a31c5b980ec19a86118bbdc6a74cf957a54cac50fb2e60cf5dd77e36ea8b531afcd4fd77b36434d489cacfca3ad6d726036623dcb5224', // Ваш приватный ключ
 };
 
 // Types
