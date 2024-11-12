@@ -6,7 +6,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@radix-ui/react-dialog": "^1.0.5",
-    "lucide-react": "^0.299.0"
+    "lucide-react": "^0.299.0",
+    "crypto-js": "^4.2.0"
   },
   "scripts": {
     "dev": "parcel index.html",
@@ -15,9 +16,9 @@
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "@types/crypto-js": "^4.2.1",
     "autoprefixer": "^10.4.16",
     "parcel": "^2.10.3",
-    "@parcel/transformer-react-refresh-wrap": "2.10.3",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.0.0"
