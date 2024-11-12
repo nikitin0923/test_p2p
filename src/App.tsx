@@ -91,6 +91,7 @@ class API {
 
     const values = [...flattenDict(data), timestamp].sort();
     const concatenatedValues = values.join(';');
+
     return hmacSHA512(concatenatedValues, API_CONFIG.API_PRIVATE).toString();
   }
 
@@ -213,7 +214,7 @@ const TransactionsTable = () => {
                 <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full
                   ${transaction.status === 'SUCCESS' ? 'bg-green-100 text-green-800' :
                     transaction.status === 'DECLINED' ? 'bg-red-100 text-red-800' :
-                    'bg-yellow-100 text-yellow-800'}`}>
+                    'bg-yellow-100 text-yellow-800'}`} >
                   {transaction.status}
                 </span>
               </td>
