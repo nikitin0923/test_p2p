@@ -188,7 +188,7 @@ const TransactionsTable = () => {
     }, 30000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [transactions]);
 
   return (
     <div className="overflow-x-auto">
@@ -422,7 +422,7 @@ export const P2PCISPayment = () => {
                       </div>
                     )}
                     {transaction.payment_data.pay_link && (
-                      
+                      <a 
                         href={transaction.payment_data.pay_link}
                         target="_blank"
                         rel="noopener noreferrer"
